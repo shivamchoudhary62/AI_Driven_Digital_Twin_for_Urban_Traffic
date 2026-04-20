@@ -29,18 +29,14 @@ Desktop.ini
 # Streamlit
 .streamlit/secrets.toml
 
-# Large model files (too big for GitHub)
-model/traffic_model.pkl
-model/*.zip
-model/*.pt
-model/*.pkl
-model/*.npz
+# Large data (not needed for dashboard)
+data/real_traffic_data.csv
 
-# Data files
-data/*.csv
-
-# Results (generated images)
-results/*.png
+# DRL agent checkpoints (not needed for dashboard)
+model/drl_dqn_agent.zip
+model/drl_ppo_agent.zip
+model/stgcn_model.pt
+model/stgcn_norm_params.npz
 
 # Presentation files
 *.pptx
