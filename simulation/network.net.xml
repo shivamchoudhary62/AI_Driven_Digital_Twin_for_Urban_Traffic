@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-04-19T20:40:37.326173+05:30 by Eclipse SUMO netconvert 1.26.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="vadodara.nod.xml"/>
+        <edge-files value="vadodara.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="network.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.join value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="200.00,600.00" convBoundary="0.00,0.00,1000.00,1150.00" origBoundary="-200.00,-600.00,800.00,550.00" projParameter="!"/>
+
+    <edge id=":karelibaug_0" function="internal">
+        <lane id=":karelibaug_0_0" index="0" speed="13.27" length="19.17" shape="457.00,604.80 454.30,605.54 450.97,607.76 446.99,611.46 442.38,616.64"/>
+    </edge>
+    <edge id=":karelibaug_1" function="internal">
+        <lane id=":karelibaug_1_0" index="0" speed="12.50" length="24.66" shape="457.00,604.80 432.34,604.80"/>
+        <lane id=":karelibaug_1_1" index="1" speed="12.50" length="24.66" shape="457.00,601.60 432.34,601.60"/>
+    </edge>
+    <edge id=":karelibaug_3" function="internal">
+        <lane id=":karelibaug_3_0" index="0" speed="12.50" length="24.66" shape="432.34,595.20 457.00,595.20"/>
+        <lane id=":karelibaug_3_1" index="1" speed="12.50" length="24.66" shape="432.34,598.40 457.00,598.40"/>
+    </edge>
+    <edge id=":karelibaug_5" function="internal">
+        <lane id=":karelibaug_5_0" index="0" speed="8.28" length="3.20" shape="432.34,598.40 435.45,599.12"/>
+    </edge>
+    <edge id=":karelibaug_8" function="internal">
+        <lane id=":karelibaug_8_0" index="0" speed="8.28" length="20.16" shape="435.45,599.12 438.61,599.86 442.24,603.64 442.82,608.84 439.92,614.59"/>
+    </edge>
+    <edge id=":karelibaug_6" function="internal">
+        <lane id=":karelibaug_6_0" index="0" speed="5.52" length="9.50" shape="435.00,610.50 436.62,608.00 436.71,606.22 435.28,605.16 432.34,604.80"/>
+    </edge>
+    <edge id=":karelibaug_7" function="internal">
+        <lane id=":karelibaug_7_0" index="0" speed="13.89" length="24.71" shape="437.46,612.55 443.10,606.36 448.24,601.94 452.87,599.28 457.00,598.40"/>
+    </edge>
+    <edge id=":manjalpur_0" function="internal">
+        <lane id=":manjalpur_0_0" index="0" speed="12.50" length="0.10" shape="-4.80,300.00 -4.80,300.00"/>
+        <lane id=":manjalpur_0_1" index="1" speed="12.50" length="0.10" shape="-1.60,300.00 -1.60,300.00"/>
+    </edge>
+    <edge id=":manjalpur_2" function="internal">
+        <lane id=":manjalpur_2_0" index="0" speed="12.50" length="0.10" shape="4.80,300.00 4.80,300.00"/>
+        <lane id=":manjalpur_2_1" index="1" speed="12.50" length="0.10" shape="1.60,300.00 1.60,300.00"/>
+    </edge>
+    <edge id=":natubhai_0" function="internal">
+        <lane id=":natubhai_0_0" index="0" speed="6.51" length="9.03" shape="195.20,610.40 194.85,607.95 193.80,606.20 192.05,605.15 189.60,604.80"/>
+    </edge>
+    <edge id=":natubhai_1" function="internal">
+        <lane id=":natubhai_1_0" index="0" allow="passenger" speed="8.00" length="14.19" shape="198.40,610.40 197.85,606.55 196.20,603.80 193.45,602.15 189.60,601.60"/>
+    </edge>
+    <edge id=":natubhai_2" function="internal">
+        <lane id=":natubhai_2_0" index="0" speed="9.26" length="19.35" shape="198.40,610.40 199.15,605.15 201.40,601.40 205.15,599.15 210.40,598.40"/>
+    </edge>
+    <edge id=":natubhai_3" function="internal">
+        <lane id=":natubhai_3_0" index="0" speed="6.51" length="9.03" shape="210.40,604.80 207.95,605.15 206.20,606.20 205.15,607.95 204.80,610.40"/>
+    </edge>
+    <edge id=":natubhai_4" function="internal">
+        <lane id=":natubhai_4_0" index="0" speed="11.11" length="20.80" shape="210.40,604.80 189.60,604.80"/>
+        <lane id=":natubhai_4_1" index="1" speed="11.11" length="20.80" shape="210.40,601.60 189.60,601.60"/>
+    </edge>
+    <edge id=":natubhai_6" function="internal">
+        <lane id=":natubhai_6_0" index="0" allow="passenger" speed="9.72" length="20.80" shape="210.40,601.60 189.60,601.60"/>
+    </edge>
+    <edge id=":natubhai_7" function="internal">
+        <lane id=":natubhai_7_0" index="0" speed="11.11" length="20.80" shape="189.60,595.20 210.40,595.20"/>
+        <lane id=":natubhai_7_1" index="1" speed="11.11" length="20.80" shape="189.60,598.40 210.40,598.40"/>
+    </edge>
+    <edge id=":natubhai_9" function="internal">
+        <lane id=":natubhai_9_0" index="0" speed="9.26" length="5.01" shape="189.60,598.40 194.56,599.11"/>
+    </edge>
+    <edge id=":natubhai_10" function="internal">
+        <lane id=":natubhai_10_0" index="0" allow="passenger" speed="3.24" length="1.60" shape="189.60,598.40 189.60,600.00"/>
+    </edge>
+    <edge id=":natubhai_11" function="internal">
+        <lane id=":natubhai_11_0" index="0" speed="9.26" length="14.34" shape="194.56,599.11 194.85,599.15 198.60,601.40 200.85,605.15 201.60,610.40"/>
+    </edge>
+    <edge id=":natubhai_12" function="internal">
+        <lane id=":natubhai_12_0" index="0" allow="passenger" speed="3.24" length="1.60" shape="189.60,600.00 189.60,601.60"/>
+    </edge>
+    <edge id=":prodmore_0" function="internal">
+        <lane id=":prodmore_0_0" index="0" speed="8.67" length="28.12" shape="215.00,889.49 208.75,893.81 202.29,893.67 197.24,889.64 195.20,882.32"/>
+        <lane id=":prodmore_0_1" index="1" speed="7.41" length="20.08" shape="212.55,887.44 208.08,890.53 203.47,890.43 199.86,887.55 198.40,882.32"/>
+    </edge>
+    <edge id=":prodmore_2" function="internal">
+        <lane id=":prodmore_2_0" index="0" speed="4.21" length="5.29" shape="204.80,882.32 204.98,884.04 205.51,884.79 206.39,884.56 207.63,883.35"/>
+        <lane id=":prodmore_2_1" index="1" speed="6.66" length="15.87" shape="201.60,882.32 202.13,887.49 203.72,889.72 206.37,889.02 210.09,885.40"/>
+    </edge>
+    <edge id=":raopura_jn_0" function="internal">
+        <lane id=":raopura_jn_0_0" index="0" speed="10.36" length="24.51" shape="10.40,604.80 3.75,603.85 -1.00,601.00 -3.85,596.25 -4.80,589.60"/>
+        <lane id=":raopura_jn_0_1" index="1" speed="9.26" length="19.35" shape="10.40,601.60 5.15,600.85 1.40,598.60 -0.85,594.85 -1.60,589.60"/>
+    </edge>
+    <edge id=":raopura_jn_2" function="internal">
+        <lane id=":raopura_jn_2_0" index="0" allow="passenger" speed="9.26" length="19.35" shape="10.40,601.60 5.15,600.85 1.40,598.60 -0.85,594.85 -1.60,589.60"/>
+    </edge>
+    <edge id=":raopura_jn_3" function="internal">
+        <lane id=":raopura_jn_3_0" index="0" allow="passenger" speed="3.24" length="3.20" shape="10.40,601.60 10.40,598.40"/>
+    </edge>
+    <edge id=":raopura_jn_4" function="internal">
+        <lane id=":raopura_jn_4_0" index="0" speed="6.51" length="9.03" shape="4.80,589.60 5.15,592.05 6.20,593.80 7.95,594.85 10.40,595.20"/>
+        <lane id=":raopura_jn_4_1" index="1" speed="8.00" length="14.19" shape="1.60,589.60 2.15,593.45 3.80,596.20 6.55,597.85 10.40,598.40"/>
+    </edge>
+    <edge id=":sama_0" function="internal">
+        <lane id=":sama_0_0" index="0" speed="6.51" length="9.03" shape="745.20,610.40 744.85,607.95 743.80,606.20 742.05,605.15 739.60,604.80"/>
+        <lane id=":sama_0_1" index="1" speed="8.00" length="14.19" shape="748.40,610.40 747.85,606.55 746.20,603.80 743.45,602.15 739.60,601.60"/>
+    </edge>
+    <edge id=":sama_2" function="internal">
+        <lane id=":sama_2_0" index="0" speed="9.26" length="19.35" shape="748.40,610.40 749.15,605.15 751.40,601.40 755.15,599.15 760.40,598.40"/>
+    </edge>
+    <edge id=":sama_3" function="internal">
+        <lane id=":sama_3_0" index="0" speed="6.51" length="9.03" shape="760.40,604.80 757.95,605.15 756.20,606.20 755.15,607.95 754.80,610.40"/>
+    </edge>
+    <edge id=":sama_4" function="internal">
+        <lane id=":sama_4_0" index="0" speed="13.89" length="20.80" shape="760.40,604.80 739.60,604.80"/>
+        <lane id=":sama_4_1" index="1" speed="13.89" length="20.80" shape="760.40,601.60 739.60,601.60"/>
+    </edge>
+    <edge id=":sama_6" function="internal">
+        <lane id=":sama_6_0" index="0" speed="13.89" length="20.80" shape="739.60,595.20 760.40,595.20"/>
+        <lane id=":sama_6_1" index="1" speed="13.89" length="20.80" shape="739.60,598.40 760.40,598.40"/>
+    </edge>
+    <edge id=":sama_8" function="internal">
+        <lane id=":sama_8_0" index="0" speed="9.26" length="5.01" shape="739.60,598.40 744.56,599.11"/>
+    </edge>
+    <edge id=":sama_9" function="internal">
+        <lane id=":sama_9_0" index="0" speed="9.26" length="14.34" shape="744.56,599.11 744.85,599.15 748.60,601.40 750.85,605.15 751.60,610.40"/>
+    </edge>
+
+    <edge id="dandia_e" from="natubhai" to="karelibaug" priority="-1" length="96.30">
+        <lane id="dandia_e_0" index="0" speed="11.11" length="96.30" shape="210.40,595.20 432.34,595.20"/>
+        <lane id="dandia_e_1" index="1" speed="11.11" length="96.30" shape="210.40,598.40 432.34,598.40"/>
+    </edge>
+    <edge id="dandia_w" from="karelibaug" to="natubhai" priority="-1" length="96.30">
+        <lane id="dandia_w_0" index="0" speed="11.11" length="96.30" shape="432.34,604.80 210.40,604.80"/>
+        <lane id="dandia_w_1" index="1" speed="11.11" length="96.30" shape="432.34,601.60 210.40,601.60"/>
+    </edge>
+    <edge id="gotri_n" from="sama" to="gotri_end" priority="-1" length="505.80">
+        <lane id="gotri_n_0" index="0" speed="13.89" length="505.80" shape="754.80,610.40 754.80,1150.00"/>
+        <lane id="gotri_n_1" index="1" speed="13.89" length="505.80" shape="751.60,610.40 751.60,1150.00"/>
+    </edge>
+    <edge id="gotri_s" from="gotri_end" to="sama" priority="-1" length="505.80">
+        <lane id="gotri_s_0" index="0" speed="13.89" length="505.80" shape="745.20,1150.00 745.20,610.40"/>
+        <lane id="gotri_s_1" index="1" speed="13.89" length="505.80" shape="748.40,1150.00 748.40,610.40"/>
+    </edge>
+    <edge id="jetalpur_e" from="karelibaug" to="sama" priority="-1" length="199.00">
+        <lane id="jetalpur_e_0" index="0" speed="13.89" length="199.00" shape="457.00,595.20 739.60,595.20"/>
+        <lane id="jetalpur_e_1" index="1" speed="13.89" length="199.00" shape="457.00,598.40 739.60,598.40"/>
+    </edge>
+    <edge id="jetalpur_w" from="sama" to="karelibaug" priority="-1" length="199.00">
+        <lane id="jetalpur_w_0" index="0" speed="13.89" length="199.00" shape="739.60,604.80 457.00,604.80"/>
+        <lane id="jetalpur_w_1" index="1" speed="13.89" length="199.00" shape="739.60,601.60 457.00,601.60"/>
+    </edge>
+    <edge id="manjalpur_n" from="manjalpur" to="raopura_jn" priority="-1" length="178.80">
+        <lane id="manjalpur_n_0" index="0" speed="11.11" length="178.80" shape="4.80,300.00 4.80,589.60"/>
+        <lane id="manjalpur_n_1" index="1" speed="11.11" length="178.80" shape="1.60,300.00 1.60,589.60"/>
+    </edge>
+    <edge id="manjalpur_s" from="raopura_jn" to="manjalpur" priority="-1" length="178.80">
+        <lane id="manjalpur_s_0" index="0" speed="11.11" length="178.80" shape="-4.80,589.60 -4.80,300.00"/>
+        <lane id="manjalpur_s_1" index="1" speed="11.11" length="178.80" shape="-1.60,589.60 -1.60,300.00"/>
+    </edge>
+    <edge id="natubhai_loop" from="natubhai" to="raopura_jn" priority="-1" length="30.40">
+        <lane id="natubhai_loop_0" index="0" allow="passenger" speed="8.33" length="30.40" shape="189.60,601.60 10.40,601.60"/>
+    </edge>
+    <edge id="newsama_e" from="sama" to="newsama_end" priority="-1" length="188.40">
+        <lane id="newsama_e_0" index="0" speed="13.89" length="188.40" shape="760.40,595.20 1000.00,595.20"/>
+        <lane id="newsama_e_1" index="1" speed="13.89" length="188.40" shape="760.40,598.40 1000.00,598.40"/>
+    </edge>
+    <edge id="newsama_w" from="newsama_end" to="sama" priority="-1" length="188.40">
+        <lane id="newsama_w_0" index="0" speed="13.89" length="188.40" shape="1000.00,604.80 760.40,604.80"/>
+        <lane id="newsama_w_1" index="1" speed="13.89" length="188.40" shape="1000.00,601.60 760.40,601.60"/>
+    </edge>
+    <edge id="oldpadra_n" from="oldpadra_end" to="manjalpur" priority="-1" length="264.70">
+        <lane id="oldpadra_n_0" index="0" speed="13.89" length="264.70" shape="4.80,0.00 4.80,300.00"/>
+        <lane id="oldpadra_n_1" index="1" speed="13.89" length="264.70" shape="1.60,0.00 1.60,300.00"/>
+    </edge>
+    <edge id="oldpadra_s" from="manjalpur" to="oldpadra_end" priority="-1" length="264.70">
+        <lane id="oldpadra_s_0" index="0" speed="13.89" length="264.70" shape="-4.80,300.00 -4.80,0.00"/>
+        <lane id="oldpadra_s_1" index="1" speed="13.89" length="264.70" shape="-1.60,300.00 -1.60,0.00"/>
+    </edge>
+    <edge id="racecourse_n" from="natubhai" to="prodmore" priority="-1" length="280.50">
+        <lane id="racecourse_n_0" index="0" speed="13.89" length="280.50" shape="204.80,610.40 204.80,882.32"/>
+        <lane id="racecourse_n_1" index="1" speed="13.89" length="280.50" shape="201.60,610.40 201.60,882.32"/>
+    </edge>
+    <edge id="racecourse_s" from="prodmore" to="natubhai" priority="-1" length="280.50">
+        <lane id="racecourse_s_0" index="0" speed="13.89" length="280.50" shape="195.20,882.32 195.20,610.40"/>
+        <lane id="racecourse_s_1" index="1" speed="13.89" length="280.50" shape="198.40,882.32 198.40,610.40"/>
+    </edge>
+    <edge id="raopura_e" from="raopura_jn" to="natubhai" priority="-1" length="93.70">
+        <lane id="raopura_e_0" index="0" speed="11.11" length="93.70" shape="10.40,595.20 189.60,595.20"/>
+        <lane id="raopura_e_1" index="1" speed="11.11" length="93.70" shape="10.40,598.40 189.60,598.40"/>
+    </edge>
+    <edge id="raopura_w" from="natubhai" to="raopura_jn" priority="-1" length="93.70">
+        <lane id="raopura_w_0" index="0" speed="11.11" length="93.70" shape="189.60,604.80 10.40,604.80"/>
+        <lane id="raopura_w_1" index="1" speed="11.11" length="93.70" shape="189.60,601.60 10.40,601.60"/>
+    </edge>
+    <edge id="rcdutt_e" from="prodmore" to="karelibaug" priority="-1" length="291.90">
+        <lane id="rcdutt_e_0" index="0" speed="13.89" length="291.90" shape="207.63,883.35 435.00,610.50"/>
+        <lane id="rcdutt_e_1" index="1" speed="13.89" length="291.90" shape="210.09,885.40 437.46,612.55"/>
+    </edge>
+    <edge id="rcdutt_w" from="karelibaug" to="prodmore" priority="-1" length="291.90">
+        <lane id="rcdutt_w_0" index="0" speed="13.89" length="291.90" shape="442.38,616.64 215.00,889.49"/>
+        <lane id="rcdutt_w_1" index="1" speed="13.89" length="291.90" shape="439.92,614.59 212.55,887.44"/>
+    </edge>
+
+    <tlLogic id="karelibaug" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGgrr"/>
+        <phase duration="3"  state="Gyyyyyrr"/>
+        <phase duration="42" state="GrrrrrGG"/>
+        <phase duration="3"  state="Grrrrryy"/>
+    </tlLogic>
+    <tlLogic id="manjalpur" type="static" programID="0" offset="0">
+        <phase duration="82" state="GGGG"/>
+        <phase duration="3"  state="yyyy"/>
+        <phase duration="5"  state="rrrr"/>
+    </tlLogic>
+    <tlLogic id="natubhai" type="static" programID="0" offset="0">
+        <phase duration="42" state="rrrGGGGGGgg"/>
+        <phase duration="3"  state="rrrGyyyyyyy"/>
+        <phase duration="42" state="GGGGrrrrrrr"/>
+        <phase duration="3"  state="yyyGrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="prodmore" type="static" programID="0" offset="0">
+        <phase duration="41" state="GGGG"/>
+        <phase duration="3"  state="yyyy"/>
+        <phase duration="1"  state="rrrr"/>
+        <phase duration="41" state="GGGG"/>
+        <phase duration="3"  state="yyyy"/>
+        <phase duration="1"  state="rrrr"/>
+    </tlLogic>
+    <tlLogic id="raopura_jn" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGrrGG"/>
+        <phase duration="3"  state="yyrryy"/>
+        <phase duration="42" state="rrGGrr"/>
+        <phase duration="3"  state="rryyrr"/>
+    </tlLogic>
+    <tlLogic id="sama" type="static" programID="0" offset="0">
+        <phase duration="42" state="rrrGGGGGg"/>
+        <phase duration="3"  state="rrrGyyyyy"/>
+        <phase duration="42" state="GGGGrrrrr"/>
+        <phase duration="3"  state="yyyGrrrrr"/>
+    </tlLogic>
+
+    <junction id="gotri_end" type="dead_end" x="750.00" y="1150.00" incLanes="gotri_n_0 gotri_n_1" intLanes="" shape="750.00,1150.00 756.40,1150.00 750.00,1150.00"/>
+    <junction id="karelibaug" type="traffic_light" x="450.00" y="600.00" incLanes="jetalpur_w_0 jetalpur_w_1 dandia_e_0 dandia_e_1 rcdutt_e_0 rcdutt_e_1" intLanes=":karelibaug_0_0 :karelibaug_1_0 :karelibaug_1_1 :karelibaug_3_0 :karelibaug_3_1 :karelibaug_8_0 :karelibaug_6_0 :karelibaug_7_0" shape="457.00,606.40 457.00,593.60 432.34,593.60 432.34,606.40 434.27,606.74 434.70,607.17 434.75,607.77 434.45,608.53 433.77,609.47 443.61,617.67 446.59,614.22 449.27,611.41 451.65,609.22 453.73,607.65 455.51,606.71">
+        <request index="0" response="00000000" foes="00000000" cont="0"/>
+        <request index="1" response="00000000" foes="11100000" cont="0"/>
+        <request index="2" response="00000000" foes="11100000" cont="0"/>
+        <request index="3" response="00000000" foes="10000000" cont="0"/>
+        <request index="4" response="00000000" foes="10000000" cont="0"/>
+        <request index="5" response="00000110" foes="10000110" cont="1"/>
+        <request index="6" response="00000110" foes="00000110" cont="0"/>
+        <request index="7" response="00111110" foes="00111110" cont="0"/>
+    </junction>
+    <junction id="manjalpur" type="traffic_light" x="0.00" y="300.00" incLanes="manjalpur_s_0 manjalpur_s_1 oldpadra_n_0 oldpadra_n_1" intLanes=":manjalpur_0_0 :manjalpur_0_1 :manjalpur_2_0 :manjalpur_2_1" shape="-6.40,300.00 6.40,300.00 -6.40,300.00">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="natubhai" type="traffic_light" x="200.00" y="600.00" incLanes="racecourse_s_0 racecourse_s_1 dandia_w_0 dandia_w_1 raopura_e_0 raopura_e_1" intLanes=":natubhai_0_0 :natubhai_1_0 :natubhai_2_0 :natubhai_3_0 :natubhai_4_0 :natubhai_4_1 :natubhai_6_0 :natubhai_7_0 :natubhai_7_1 :natubhai_11_0 :natubhai_12_0" shape="193.60,610.40 206.40,610.40 206.84,608.18 207.40,607.40 208.18,606.84 209.18,606.51 210.40,606.40 210.40,593.60 189.60,593.60 189.60,606.40 191.82,606.84 192.60,607.40 193.16,608.18 193.49,609.18">
+        <request index="0"  response="00000110000" foes="00000110000" cont="0"/>
+        <request index="1"  response="10001110000" foes="10001110000" cont="0"/>
+        <request index="2"  response="01111110000" foes="01111110000" cont="0"/>
+        <request index="3"  response="00000000000" foes="00000000000" cont="0"/>
+        <request index="4"  response="00000000000" foes="01000000111" cont="0"/>
+        <request index="5"  response="00000000000" foes="01000000111" cont="0"/>
+        <request index="6"  response="00000000000" foes="11000000110" cont="0"/>
+        <request index="7"  response="00000000000" foes="00000000100" cont="0"/>
+        <request index="8"  response="00000000000" foes="00000000100" cont="0"/>
+        <request index="9"  response="00001110000" foes="00001110100" cont="1"/>
+        <request index="10" response="00001000000" foes="00001000010" cont="1"/>
+    </junction>
+    <junction id="newsama_end" type="dead_end" x="1000.00" y="600.00" incLanes="newsama_e_0 newsama_e_1" intLanes="" shape="1000.00,600.00 1000.00,593.60 1000.00,600.00"/>
+    <junction id="oldpadra_end" type="dead_end" x="0.00" y="0.00" incLanes="oldpadra_s_0 oldpadra_s_1" intLanes="" shape="0.00,0.00 -6.40,0.00 0.00,0.00"/>
+    <junction id="prodmore" type="traffic_light" x="200.00" y="900.00" incLanes="rcdutt_w_0 rcdutt_w_1 racecourse_n_0 racecourse_n_1" intLanes=":prodmore_0_0 :prodmore_0_1 :prodmore_2_0 :prodmore_2_1" shape="216.23,890.52 206.40,882.32 193.60,882.32 194.23,892.37 196.11,898.95 199.26,902.05 203.66,901.68 209.32,897.83">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="raopura_jn" type="traffic_light" x="0.00" y="600.00" incLanes="raopura_w_0 raopura_w_1 natubhai_loop_0 manjalpur_n_0 manjalpur_n_1" intLanes=":raopura_jn_0_0 :raopura_jn_0_1 :raopura_jn_2_0 :raopura_jn_3_0 :raopura_jn_4_0 :raopura_jn_4_1" shape="10.40,606.40 10.40,593.60 8.18,593.16 7.40,592.60 6.84,591.82 6.51,590.82 6.40,589.60 -6.40,589.60 -5.93,594.73 -4.53,598.93 -2.20,602.20 1.07,604.53 5.27,605.93">
+        <request index="0" response="000000" foes="000100" cont="0"/>
+        <request index="1" response="000000" foes="000100" cont="0"/>
+        <request index="2" response="000011" foes="000011" cont="0"/>
+        <request index="3" response="110000" foes="110000" cont="0"/>
+        <request index="4" response="000000" foes="001000" cont="0"/>
+        <request index="5" response="000000" foes="001000" cont="0"/>
+    </junction>
+    <junction id="sama" type="traffic_light" x="750.00" y="600.00" incLanes="gotri_s_0 gotri_s_1 newsama_w_0 newsama_w_1 jetalpur_e_0 jetalpur_e_1" intLanes=":sama_0_0 :sama_0_1 :sama_2_0 :sama_3_0 :sama_4_0 :sama_4_1 :sama_6_0 :sama_6_1 :sama_9_0" shape="743.60,610.40 756.40,610.40 756.84,608.18 757.40,607.40 758.18,606.84 759.18,606.51 760.40,606.40 760.40,593.60 739.60,593.60 739.60,606.40 741.82,606.84 742.60,607.40 743.16,608.18 743.49,609.18">
+        <request index="0" response="000110000" foes="000110000" cont="0"/>
+        <request index="1" response="000110000" foes="000110000" cont="0"/>
+        <request index="2" response="111110000" foes="111110000" cont="0"/>
+        <request index="3" response="000000000" foes="000000000" cont="0"/>
+        <request index="4" response="000000000" foes="100000111" cont="0"/>
+        <request index="5" response="000000000" foes="100000111" cont="0"/>
+        <request index="6" response="000000000" foes="000000100" cont="0"/>
+        <request index="7" response="000000000" foes="000000100" cont="0"/>
+        <request index="8" response="000110000" foes="000110100" cont="1"/>
+    </junction>
+
+    <junction id=":karelibaug_8_0" type="internal" x="435.45" y="599.12" incLanes=":karelibaug_5_0 jetalpur_w_0 jetalpur_w_1" intLanes=":karelibaug_1_0 :karelibaug_1_1 :karelibaug_7_0"/>
+    <junction id=":natubhai_11_0" type="internal" x="194.56" y="599.11" incLanes=":natubhai_9_0 dandia_w_0 dandia_w_1" intLanes=":natubhai_2_0 :natubhai_4_0 :natubhai_4_1 :natubhai_6_0"/>
+    <junction id=":natubhai_12_0" type="internal" x="189.60" y="600.00" incLanes=":natubhai_10_0 dandia_w_1" intLanes=":natubhai_1_0 :natubhai_6_0"/>
+    <junction id=":sama_9_0" type="internal" x="744.56" y="599.11" incLanes=":sama_8_0 newsama_w_0 newsama_w_1" intLanes=":sama_2_0 :sama_4_0 :sama_4_1"/>
+
+    <connection from="dandia_e" to="jetalpur_e" fromLane="0" toLane="0" via=":karelibaug_3_0" tl="karelibaug" linkIndex="3" dir="s" state="O"/>
+    <connection from="dandia_e" to="jetalpur_e" fromLane="1" toLane="1" via=":karelibaug_3_1" tl="karelibaug" linkIndex="4" dir="s" state="O"/>
+    <connection from="dandia_e" to="rcdutt_w" fromLane="1" toLane="1" via=":karelibaug_5_0" tl="karelibaug" linkIndex="5" dir="l" state="o"/>
+    <connection from="dandia_w" to="racecourse_n" fromLane="0" toLane="0" via=":natubhai_3_0" tl="natubhai" linkIndex="3" dir="r" state="O"/>
+    <connection from="dandia_w" to="raopura_w" fromLane="0" toLane="0" via=":natubhai_4_0" tl="natubhai" linkIndex="4" dir="s" state="O"/>
+    <connection from="dandia_w" to="raopura_w" fromLane="1" toLane="1" via=":natubhai_4_1" tl="natubhai" linkIndex="5" dir="s" state="O"/>
+    <connection from="dandia_w" to="natubhai_loop" fromLane="1" toLane="0" via=":natubhai_6_0" tl="natubhai" linkIndex="6" dir="s" state="O"/>
+    <connection from="gotri_s" to="jetalpur_w" fromLane="0" toLane="0" via=":sama_0_0" tl="sama" linkIndex="0" dir="r" state="o"/>
+    <connection from="gotri_s" to="jetalpur_w" fromLane="1" toLane="1" via=":sama_0_1" tl="sama" linkIndex="1" dir="r" state="o"/>
+    <connection from="gotri_s" to="newsama_e" fromLane="1" toLane="1" via=":sama_2_0" tl="sama" linkIndex="2" dir="l" state="o"/>
+    <connection from="jetalpur_e" to="newsama_e" fromLane="0" toLane="0" via=":sama_6_0" tl="sama" linkIndex="6" dir="s" state="O"/>
+    <connection from="jetalpur_e" to="newsama_e" fromLane="1" toLane="1" via=":sama_6_1" tl="sama" linkIndex="7" dir="s" state="O"/>
+    <connection from="jetalpur_e" to="gotri_n" fromLane="1" toLane="1" via=":sama_8_0" tl="sama" linkIndex="8" dir="l" state="o"/>
+    <connection from="jetalpur_w" to="rcdutt_w" fromLane="0" toLane="0" via=":karelibaug_0_0" tl="karelibaug" linkIndex="0" dir="r" state="O"/>
+    <connection from="jetalpur_w" to="dandia_w" fromLane="0" toLane="0" via=":karelibaug_1_0" tl="karelibaug" linkIndex="1" dir="s" state="O"/>
+    <connection from="jetalpur_w" to="dandia_w" fromLane="1" toLane="1" via=":karelibaug_1_1" tl="karelibaug" linkIndex="2" dir="s" state="O"/>
+    <connection from="manjalpur_n" to="raopura_e" fromLane="0" toLane="0" via=":raopura_jn_4_0" tl="raopura_jn" linkIndex="4" dir="r" state="O"/>
+    <connection from="manjalpur_n" to="raopura_e" fromLane="1" toLane="1" via=":raopura_jn_4_1" tl="raopura_jn" linkIndex="5" dir="r" state="O"/>
+    <connection from="manjalpur_s" to="oldpadra_s" fromLane="0" toLane="0" via=":manjalpur_0_0" tl="manjalpur" linkIndex="0" dir="s" state="O"/>
+    <connection from="manjalpur_s" to="oldpadra_s" fromLane="1" toLane="1" via=":manjalpur_0_1" tl="manjalpur" linkIndex="1" dir="s" state="O"/>
+    <connection from="natubhai_loop" to="manjalpur_s" fromLane="0" toLane="1" via=":raopura_jn_2_0" tl="raopura_jn" linkIndex="2" dir="L" state="o"/>
+    <connection from="natubhai_loop" to="raopura_e" fromLane="0" toLane="1" via=":raopura_jn_3_0" tl="raopura_jn" linkIndex="3" dir="t" state="o"/>
+    <connection from="newsama_w" to="gotri_n" fromLane="0" toLane="0" via=":sama_3_0" tl="sama" linkIndex="3" dir="r" state="O"/>
+    <connection from="newsama_w" to="jetalpur_w" fromLane="0" toLane="0" via=":sama_4_0" tl="sama" linkIndex="4" dir="s" state="O"/>
+    <connection from="newsama_w" to="jetalpur_w" fromLane="1" toLane="1" via=":sama_4_1" tl="sama" linkIndex="5" dir="s" state="O"/>
+    <connection from="oldpadra_n" to="manjalpur_n" fromLane="0" toLane="0" via=":manjalpur_2_0" tl="manjalpur" linkIndex="2" dir="s" state="O"/>
+    <connection from="oldpadra_n" to="manjalpur_n" fromLane="1" toLane="1" via=":manjalpur_2_1" tl="manjalpur" linkIndex="3" dir="s" state="O"/>
+    <connection from="racecourse_n" to="rcdutt_e" fromLane="0" toLane="0" via=":prodmore_2_0" tl="prodmore" linkIndex="2" dir="r" state="O"/>
+    <connection from="racecourse_n" to="rcdutt_e" fromLane="1" toLane="1" via=":prodmore_2_1" tl="prodmore" linkIndex="3" dir="r" state="O"/>
+    <connection from="racecourse_s" to="raopura_w" fromLane="0" toLane="0" via=":natubhai_0_0" tl="natubhai" linkIndex="0" dir="r" state="o"/>
+    <connection from="racecourse_s" to="natubhai_loop" fromLane="1" toLane="0" via=":natubhai_1_0" tl="natubhai" linkIndex="1" dir="R" state="o"/>
+    <connection from="racecourse_s" to="dandia_e" fromLane="1" toLane="1" via=":natubhai_2_0" tl="natubhai" linkIndex="2" dir="l" state="o"/>
+    <connection from="raopura_e" to="dandia_e" fromLane="0" toLane="0" via=":natubhai_7_0" tl="natubhai" linkIndex="7" dir="s" state="O"/>
+    <connection from="raopura_e" to="dandia_e" fromLane="1" toLane="1" via=":natubhai_7_1" tl="natubhai" linkIndex="8" dir="s" state="O"/>
+    <connection from="raopura_e" to="racecourse_n" fromLane="1" toLane="1" via=":natubhai_9_0" tl="natubhai" linkIndex="9" dir="l" state="o"/>
+    <connection from="raopura_e" to="natubhai_loop" fromLane="1" toLane="0" via=":natubhai_10_0" tl="natubhai" linkIndex="10" dir="t" state="o"/>
+    <connection from="raopura_w" to="manjalpur_s" fromLane="0" toLane="0" via=":raopura_jn_0_0" tl="raopura_jn" linkIndex="0" dir="l" state="O"/>
+    <connection from="raopura_w" to="manjalpur_s" fromLane="1" toLane="1" via=":raopura_jn_0_1" tl="raopura_jn" linkIndex="1" dir="l" state="O"/>
+    <connection from="rcdutt_e" to="dandia_w" fromLane="0" toLane="0" via=":karelibaug_6_0" tl="karelibaug" linkIndex="6" dir="r" state="o"/>
+    <connection from="rcdutt_e" to="jetalpur_e" fromLane="1" toLane="1" via=":karelibaug_7_0" tl="karelibaug" linkIndex="7" dir="l" state="o"/>
+    <connection from="rcdutt_w" to="racecourse_s" fromLane="0" toLane="0" via=":prodmore_0_0" tl="prodmore" linkIndex="0" dir="l" state="O"/>
+    <connection from="rcdutt_w" to="racecourse_s" fromLane="1" toLane="1" via=":prodmore_0_1" tl="prodmore" linkIndex="1" dir="l" state="O"/>
+
+    <connection from=":karelibaug_0" to="rcdutt_w" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":karelibaug_1" to="dandia_w" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":karelibaug_1" to="dandia_w" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":karelibaug_3" to="jetalpur_e" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":karelibaug_3" to="jetalpur_e" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":karelibaug_5" to="rcdutt_w" fromLane="0" toLane="1" via=":karelibaug_8_0" dir="l" state="m"/>
+    <connection from=":karelibaug_8" to="rcdutt_w" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":karelibaug_6" to="dandia_w" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":karelibaug_7" to="jetalpur_e" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":manjalpur_0" to="oldpadra_s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":manjalpur_0" to="oldpadra_s" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":manjalpur_2" to="manjalpur_n" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":manjalpur_2" to="manjalpur_n" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":natubhai_0" to="raopura_w" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":natubhai_1" to="natubhai_loop" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":natubhai_2" to="dandia_e" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":natubhai_3" to="racecourse_n" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":natubhai_4" to="raopura_w" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":natubhai_4" to="raopura_w" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":natubhai_6" to="natubhai_loop" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":natubhai_7" to="dandia_e" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":natubhai_7" to="dandia_e" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":natubhai_9" to="racecourse_n" fromLane="0" toLane="1" via=":natubhai_11_0" dir="l" state="m"/>
+    <connection from=":natubhai_11" to="racecourse_n" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":natubhai_10" to="natubhai_loop" fromLane="0" toLane="0" via=":natubhai_12_0" dir="t" state="m"/>
+    <connection from=":natubhai_12" to="natubhai_loop" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":prodmore_0" to="racecourse_s" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":prodmore_0" to="racecourse_s" fromLane="1" toLane="1" dir="l" state="M"/>
+    <connection from=":prodmore_2" to="rcdutt_e" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":prodmore_2" to="rcdutt_e" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":raopura_jn_0" to="manjalpur_s" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":raopura_jn_0" to="manjalpur_s" fromLane="1" toLane="1" dir="l" state="M"/>
+    <connection from=":raopura_jn_2" to="manjalpur_s" fromLane="0" toLane="1" dir="L" state="M"/>
+    <connection from=":raopura_jn_3" to="raopura_e" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":raopura_jn_4" to="raopura_e" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":raopura_jn_4" to="raopura_e" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":sama_0" to="jetalpur_w" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":sama_0" to="jetalpur_w" fromLane="1" toLane="1" dir="r" state="M"/>
+    <connection from=":sama_2" to="newsama_e" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":sama_3" to="gotri_n" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":sama_4" to="jetalpur_w" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":sama_4" to="jetalpur_w" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":sama_6" to="newsama_e" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":sama_6" to="newsama_e" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":sama_8" to="gotri_n" fromLane="0" toLane="1" via=":sama_9_0" dir="l" state="m"/>
+    <connection from=":sama_9" to="gotri_n" fromLane="0" toLane="1" dir="l" state="M"/>
+
+</net>

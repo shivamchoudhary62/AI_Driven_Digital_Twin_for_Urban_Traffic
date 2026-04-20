@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large model files (too big for GitHub)
+model/traffic_model.pkl
+model/*.zip
+model/*.pt
+model/*.pkl
+model/*.npz
+
+# Data files
+data/*.csv
+
+# Results (generated images)
+results/*.png
+
+# Presentation files
+*.pptx
+*.pdf
