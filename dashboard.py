@@ -326,7 +326,7 @@ with tab3:
 
     if os.path.exists("results/stgcn_evaluation.png"):
         st.image("results/stgcn_evaluation.png", caption="STGCN Training & Evaluation Results",
-                 use_column_width=True)
+                 use_container_width=True)
     else:
         st.warning("Run `python models/train_stgcn.py` to generate STGCN results.")
 
@@ -379,11 +379,11 @@ with tab4:
     with col_l:
         if os.path.exists("results/drl_learning_curve.png"):
             st.image("results/drl_learning_curve.png", caption="DRL Training — Learning Curves",
-                     use_column_width=True)
+                     use_container_width=True)
     with col_r:
         if os.path.exists("results/drl_comparison.png"):
             st.image("results/drl_comparison.png", caption="DRL vs Fixed-Time Baseline",
-                     use_column_width=True)
+                     use_container_width=True)
 
     if not os.path.exists("results/drl_learning_curve.png"):
         st.warning("Run `python models/train_drl.py` to generate DRL results.")

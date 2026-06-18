@@ -13,6 +13,22 @@ import os, sys, argparse
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 sys.path.insert(0, ".")
 
+# Workaround for NumPy version compatibility when loading DRL model checkpoints
+try:
+    from types import ModuleType
+    if 'numpy._core' not in sys.modules:
+        nc = ModuleType('numpy._core')
+        nc.__path__ = []
+        sys.modules['numpy._core'] = nc
+        import numpy.core.numeric as num
+        import numpy.core.multiarray as multi
+        sys.modules['numpy._core.numeric'] = num
+        sys.modules['numpy._core.multiarray'] = multi
+        nc.numeric = num
+        nc.multiarray = multi
+except Exception:
+    pass
+
 import numpy as np
 import matplotlib.pyplot as plt
 

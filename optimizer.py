@@ -11,6 +11,24 @@ No vehicle rerouting — only intelligent traffic light control.
 """
 
 import os; os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+# Workaround for NumPy version compatibility when loading DRL model checkpoints
+try:
+    import sys
+    from types import ModuleType
+    if 'numpy._core' not in sys.modules:
+        nc = ModuleType('numpy._core')
+        nc.__path__ = []
+        sys.modules['numpy._core'] = nc
+        import numpy.core.numeric as num
+        import numpy.core.multiarray as multi
+        sys.modules['numpy._core.numeric'] = num
+        sys.modules['numpy._core.multiarray'] = multi
+        nc.numeric = num
+        nc.multiarray = multi
+except Exception:
+    pass
+
 import traci
 import csv
 import time
@@ -21,7 +39,7 @@ from collections import defaultdict
 SUMO_HOME    = os.environ.get("SUMO_HOME", r"D:\Program Files\sumosimulator")
 SUMO_BINARY  = os.path.join(SUMO_HOME, "bin", "sumo")
 SUMO_GUI     = os.path.join(SUMO_HOME, "bin", "sumo-gui")
-USE_GUI      = False  # Set to True to watch the simulation in SUMO GUI
+USE_GUI      = True  # Set to True to watch the simulation in SUMO GUI
 SUMO_CFG     = "simulation/simulation.sumocfg"
 SIM_STEPS    = 3600
 SAMPLE_EVERY = 10
@@ -187,13 +205,13 @@ def main():
     # Load models
     print("\nLoading models...")
     stgcn_info = load_stgcn_model()
-    print(f"  ✓ STGCN loaded ({len(stgcn_info['edges'])} nodes)")
+    print(f"  [OK] STGCN loaded ({len(stgcn_info['edges'])} nodes)")
 
     drl_agent, drl_name = load_drl_agent()
     if drl_agent:
-        print(f"  ✓ DRL agent loaded ({drl_name})")
+        print(f"  [OK] DRL agent loaded ({drl_name})")
     else:
-        print("  ⚠ No DRL agent found — using fixed-time signals")
+        print("  [WARN] No DRL agent found - using fixed-time signals")
 
     # Start SUMO
     binary = SUMO_GUI if USE_GUI else SUMO_BINARY
@@ -277,7 +295,7 @@ def main():
 
             if step % 500 == 0:
                 veh_count = len(traci.vehicle.getIDList())
-                print(f"  Step {step:4d}/{SIM_STEPS} — "
+                print(f"  Step {step:4d}/{SIM_STEPS} - "
                       f"Vehicles: {veh_count:3d} | "
                       f"DRL actions: {drl_actions}")
 

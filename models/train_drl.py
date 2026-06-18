@@ -175,28 +175,78 @@ def main():
     baseline_reward = run_baseline_episode(env_kwargs)
 
     # ── Plot learning curves ──────────────────────────────────
-    fig, ax = plt.subplots(figsize=(12, 6))
-    fig.suptitle("DRL Training — Learning Curves",
-                 fontsize=14, fontweight="bold")
-
     colors = {"DQN": "#3B8BD4", "PPO": "#1D9E75"}
+    num_algos = len(results)
+    num_cols = num_algos + 1  # individual panels + combined
 
-    for name, rewards in results.items():
-        # Smooth with rolling average
+    # Compute global Y-axis range from agent rewards (exclude baseline outlier)
+    all_rewards = []
+    for rewards in results.values():
+        all_rewards.extend(rewards)
+    y_min = min(all_rewards) if all_rewards else -500
+    y_max = max(all_rewards) if all_rewards else 100
+    y_pad = max((y_max - y_min) * 0.15, 20)
+
+    fig, axes = plt.subplots(1, num_cols, figsize=(7 * num_cols, 6))
+    fig.suptitle("DRL Training — Learning Curves",
+                 fontsize=16, fontweight="bold", y=1.02)
+
+    if num_cols == 1:
+        axes = [axes]
+
+    def _add_baseline_annotation(ax):
+        """Show baseline as text annotation instead of axhline to avoid scale distortion."""
+        ax.annotate(
+            f"⬇ Fixed-time baseline: {baseline_reward:.0f}",
+            xy=(0.02, 0.02), xycoords="axes fraction",
+            fontsize=9, color="#E24B4A", fontweight="bold",
+            bbox=dict(boxstyle="round,pad=0.3", facecolor="#FFF0F0",
+                      edgecolor="#E24B4A", alpha=0.9),
+        )
+
+    # ── Individual subplot per algorithm ──
+    for i, (name, rewards) in enumerate(results.items()):
+        ax = axes[i]
         window = max(5, len(rewards) // 20)
         smoothed = np.convolve(rewards, np.ones(window)/window, mode="valid")
-        ax.plot(smoothed, label=f"{name} (smoothed)",
-                color=colors.get(name, "#333"), linewidth=2)
-        ax.plot(rewards, alpha=0.2, color=colors.get(name, "#333"), linewidth=0.5)
 
-    # Baseline reference line
-    ax.axhline(y=baseline_reward, color="#E24B4A", linestyle="--",
-               linewidth=2, label=f"Fixed-time baseline ({baseline_reward:.0f})")
+        ax.plot(rewards, alpha=0.25, color=colors.get(name, "#333"),
+                linewidth=0.8, label="Raw")
+        ax.plot(smoothed, color=colors.get(name, "#333"),
+                linewidth=2.5, label=f"{name} (smoothed)")
 
-    ax.set_xlabel("Episode", fontsize=12)
-    ax.set_ylabel("Episode Reward", fontsize=12)
-    ax.legend(fontsize=11)
-    ax.grid(alpha=0.3)
+        final_avg = np.mean(rewards[-10:]) if len(rewards) >= 10 else np.mean(rewards)
+        ax.axhline(y=final_avg, color=colors.get(name, "#333"),
+                   linestyle=":", linewidth=1.2, alpha=0.7,
+                   label=f"Final avg: {final_avg:.1f}")
+        ax.axhline(y=0, color="#999", linestyle="-", linewidth=0.5, alpha=0.5)
+
+        ax.set_ylim(y_min - y_pad, y_max + y_pad)
+        ax.set_title(f"{name} Learning Curve", fontweight="bold", fontsize=13)
+        ax.set_xlabel("Episode", fontsize=11)
+        ax.set_ylabel("Episode Reward", fontsize=11)
+        ax.legend(fontsize=9, loc="lower right")
+        ax.grid(alpha=0.3)
+        _add_baseline_annotation(ax)
+
+    # ── Combined overlay (rightmost panel) ──
+    ax_comb = axes[-1]
+    for name, rewards in results.items():
+        window = max(5, len(rewards) // 20)
+        smoothed = np.convolve(rewards, np.ones(window)/window, mode="valid")
+        ax_comb.plot(smoothed, label=f"{name} (smoothed)",
+                     color=colors.get(name, "#333"), linewidth=2.5)
+        ax_comb.plot(rewards, alpha=0.15, color=colors.get(name, "#333"),
+                     linewidth=0.5)
+
+    ax_comb.axhline(y=0, color="#999", linestyle="-", linewidth=0.5, alpha=0.5)
+    ax_comb.set_ylim(y_min - y_pad, y_max + y_pad)
+    ax_comb.set_title("Combined Comparison", fontweight="bold", fontsize=13)
+    ax_comb.set_xlabel("Episode", fontsize=11)
+    ax_comb.set_ylabel("Episode Reward", fontsize=11)
+    ax_comb.legend(fontsize=9, loc="lower right")
+    ax_comb.grid(alpha=0.3)
+    _add_baseline_annotation(ax_comb)
 
     plt.tight_layout()
     plt.savefig("results/drl_learning_curve.png", dpi=150, bbox_inches="tight")
